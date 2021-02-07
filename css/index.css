@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap');
+:root{
+    font-family: "Open Sans" , serif;
+}
+header nav .logo{
+    font-family: "Libre Baskerville", serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(65, 43, 31);
+}
+body{
+    background-color: tan;
+}
+ul{
+    color: rgb(100, 67, 25);
+}
+article{
+    border: 1px solid rgb(46, 32, 20);
+    margin: 20px;
+    padding: 20px;
+}
+.genesisteam{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.hairtransplant{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.plasticsurgery{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.surgery{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.laboratory{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.face{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.body{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.image{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.exit{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.reception{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.workplace{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.view{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.workplace2{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
