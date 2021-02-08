@@ -21,6 +21,16 @@ header nav .menu{
     list-style-type: none;
     flex-wrap: wrap;
 }
+.facebook-logo{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+.insta-logo{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
 article{
     border: 1px solid rgb(46, 32, 20);
     margin: 20px;
