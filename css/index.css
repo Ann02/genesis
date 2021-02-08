@@ -7,12 +7,19 @@ header nav .logo{
     font-size: 1rem;
     font-weight: bold;
     color: rgb(65, 43, 31);
+    text-transform: uppercase;
+    text-align: left;
 }
 body{
     background-color: tan;
 }
-ul{
+header nav .menu{
     color: rgb(100, 67, 25);
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
 }
 article{
     border: 1px solid rgb(46, 32, 20);
