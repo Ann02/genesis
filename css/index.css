@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap');
 :root{
     font-family: "Open Sans" , serif;
+    scroll-behavior: smooth;
 }
 header nav .logo{
     font-family: "Libre Baskerville", serif;
@@ -10,24 +11,68 @@ header nav .logo{
     text-transform: uppercase;
     text-align: left;
 }
+.burger-icon {
+    font-size: 3rem;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+header .menu {
+    display: none;
+}
+
+header input:checked ~ .menu {
+    display: flex;
+}
+
+header .menu {
+    flex-direction: column;
+}
+
+header .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    padding: 3px;
+}
+
+header .menu a:hover {
+    font-weight: bold;
+}
+
+@media (min-width: 610px) {
+    header nav {
+        display: flex;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+    header .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
+}
 body{
     background-color: tan;
 }
-header nav .menu{
-    color: rgb(100, 67, 25);
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    list-style-type: none;
-    flex-wrap: wrap;
-}
+
+
 .facebook-logo{
-    width: 50%;
+    width: 40px;
+    height: 40px;
     margin: auto;
     display: block;
 }
 .insta-logo{
-    width: 50%;
+    width: 40px;
+    height: 40px;
     margin: auto;
     display: block;
 }
@@ -36,69 +81,11 @@ article{
     margin: 20px;
     padding: 20px;
 }
-.genesisteam{
+.genesis{
     width: 100%;
     margin: auto;
     display: block;
 }
-.hairtransplant{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-.plasticsurgery{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-.surgery{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-.laboratory{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-.face{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-.body{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-.image{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-.exit{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-.reception{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-.workplace{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-.view{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-.workplace2{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
+
+
 
