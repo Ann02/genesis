@@ -1,56 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap');
 :root{
+    --main-color: rgb(58, 38, 24);
     font-family: "Open Sans" , serif;
     scroll-behavior: smooth;
+}
+body{
+    background-color: tan;
 }
 header nav .logo{
     font-family: "Libre Baskerville", serif;
     font-size: 1rem;
     font-weight: bold;
-    color: rgb(65, 43, 31);
+    color: var(--main-color);
     text-transform: uppercase;
     text-align: left;
 }
 .burger-icon {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
-
 #burger-checkbox {
     display: none;
 }
-
 header .menu {
     display: none;
+    flex-direction: column;
 }
-
 header input:checked ~ .menu {
     display: flex;
 }
-
-header .menu {
-    flex-direction: column;
-}
-
 header .menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--main-color);
+    color: rgb(90, 62, 45);
     padding: 3px;
 }
-
 header .menu a:hover {
     font-weight: bold;
 }
-
 @media (min-width: 610px) {
     header nav {
         display: flex;
     }
-
     .burger-icon {
         display: none;
     }
-
     header .menu {
         display: flex;
         flex-direction: row;
@@ -59,22 +52,35 @@ header .menu a:hover {
         flex: 1;
     }
 }
-body{
-    background-color: tan;
-}
-
-
-.facebook-logo{
+.facebook-insta-logo{
     width: 40px;
     height: 40px;
     margin: auto;
     display: block;
+    cursor: grabbing;
 }
-.insta-logo{
-    width: 40px;
-    height: 40px;
-    margin: auto;
-    display: block;
+h2{
+    font-family: "Open Sans" , serif;
+    font-size: 1.3rem;
+    color: var(--main-color);
+}
+h3{
+    font-family: "Open Sans" , serif;
+    font-size: 1.3rem;
+    color: var(--main-color);
+
+}
+p{
+    color: rgb(90, 62, 45);
+}
+.about-us .genesis{
+    width: 800px;
+}
+.about-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
 }
 article{
     border: 1px solid rgb(46, 32, 20);
@@ -86,6 +92,63 @@ article{
     margin: auto;
     display: block;
 }
-
+table{
+    color: var(--main-color);
+}
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid var(--main-color);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: var(--main-color);
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+.button:hover {
+    color: tan;
+    background-color: var(--main-color);
+    cursor: grabbing;
+}
+.leading-in .genesis{
+    width: 400px;
+}
+.in-in{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.leading-in{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+}
+input[type=text]{
+    padding: 0.35em 1.2em;
+    border: 0.1em solid var(--main-color);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: var(--main-color);
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+input[type=text]:hover{
+    color: tan;
+    background-color: var(--main-color);
+    cursor: grabbing;
+}
+input[type=submit]{
+    padding: 0.35em 1.2em;
+    border: 0.1em solid var(--main-color);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: tan;
+    text-align: center;
+    transition: color 0.7s;
+    background-color: var(--main-color);
+    cursor: grabbing
+}
 
 
