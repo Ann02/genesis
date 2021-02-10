@@ -150,5 +150,17 @@ input[type=submit]{
     background-color: var(--main-color);
     cursor: grabbing
 }
-
-
+.info{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+}
+.map{
+    width: 1800px;
+}
