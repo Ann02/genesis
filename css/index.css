@@ -9,7 +9,7 @@ body{
 }
 header nav .logo{
     font-family: "Libre Baskerville", serif;
-    font-size: 1rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: var(--main-color);
     text-transform: uppercase;
@@ -33,6 +33,7 @@ header .menu a {
     text-transform: uppercase;
     color: rgb(90, 62, 45);
     padding: 3px;
+    font-size: 1.2rem;
 }
 header .menu a:hover {
     font-weight: bold;
@@ -61,20 +62,21 @@ header .menu a:hover {
 }
 h2{
     font-family: "Open Sans" , serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--main-color);
 }
 h3{
     font-family: "Open Sans" , serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--main-color);
 
 }
 p{
     color: rgb(90, 62, 45);
+    font-size: 1.3rem;
 }
 .about-us .genesis{
-    width: 800px;
+    width: 600px;
 }
 .about-us{
     display: flex;
@@ -92,6 +94,7 @@ article{
     margin: auto;
     display: block;
 }
+
 table{
     color: var(--main-color);
 }
@@ -110,15 +113,15 @@ table{
     background-color: var(--main-color);
     cursor: grabbing;
 }
-.leading-in .genesis{
-    width: 400px;
+#leading-in .genesis{
+    width: 600px;
 }
 .in-in{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.leading-in{
+#leading-in{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -155,12 +158,12 @@ input[type=submit]{
     justify-content: flex-start;
     flex-direction: column;
 }
-.contacts{
+#contacts{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: stretch;
 }
 .map{
-    width: 1800px;
+    width: 2100px;
 }
