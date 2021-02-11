@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap');
 :root{
     --main-color: rgb(58, 38, 24);
+    --accent-color: rgb(114, 76, 53);
     font-family: "Open Sans" , serif;
     scroll-behavior: smooth;
 }
 body{
     background-color: tan;
+    max-width: 980px;
+    margin: auto;
 }
 header nav .logo{
     font-family: "Libre Baskerville", serif;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: var(--main-color);
     text-transform: uppercase;
@@ -31,14 +34,14 @@ header input:checked ~ .menu {
 header .menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(90, 62, 45);
+    color: var(--accent-color);
     padding: 3px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 header .menu a:hover {
     font-weight: bold;
 }
-@media (min-width: 610px) {
+@media (min-width: 800px) {
     header nav {
         display: flex;
     }
@@ -60,23 +63,101 @@ header .menu a:hover {
     display: block;
     cursor: grabbing;
 }
+@media (max-width: 300px){
+    #about-us{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #services{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #leading-in{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #contacts{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 500px){
+    #about-us{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #services{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #leading-in{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #contacts{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 700px){
+    #about-us{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #services{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #leading-in{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: stretch;
+    }
+    #contacts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: stretch;
+    }
+}
 h2{
     font-family: "Open Sans" , serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--main-color);
 }
 h3{
     font-family: "Open Sans" , serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--main-color);
 
 }
 p{
-    color: rgb(90, 62, 45);
-    font-size: 1.3rem;
+    color: var(--accent-color);
+    font-size: 1rem;
 }
 #about-us .genesis{
-    width: 700px;
+    width: 600px;
 }
 #about-us{
     display: flex;
