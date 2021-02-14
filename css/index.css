@@ -64,12 +64,6 @@ header .menu a:hover {
     cursor: grabbing;
 }
 @media (max-width: 300px){
-    #about-us{
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
     #services{
         display: flex;
         justify-content: center;
@@ -90,12 +84,6 @@ header .menu a:hover {
     }
 }
 @media (max-width: 500px){
-    #about-us{
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
     #services{
         display: flex;
         justify-content: center;
@@ -116,12 +104,6 @@ header .menu a:hover {
     }
 }
 @media (max-width: 700px){
-    #about-us{
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
     #services{
         display: flex;
         justify-content: center;
@@ -141,6 +123,16 @@ header .menu a:hover {
         align-content: stretch;
     }
 }
+@media (min-width: 300px){
+    #about-us{
+        display: grid;
+    }
+}
+@media (min-width: 500px){
+    #about-us{
+        display: grid;
+    }
+}
 h2{
     font-family: "Open Sans" , serif;
     font-size: 1.5rem;
@@ -157,13 +149,16 @@ p{
     font-size: 1rem;
 }
 #about-us .genesis{
-    width: 600px;
+    object-fit: cover;
+    object-position: 90.60% 50%;
+    width: 100%;
+    display: block;
 }
 #about-us{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
 }
 article{
     border: 1px solid rgb(46, 32, 20);
@@ -195,7 +190,7 @@ table{
     cursor: grabbing;
 }
 #leading-in .genesis{
-    width: 600px;
+    width: 50%;
 }
 .in-in{
     display: flex;
