@@ -246,3 +246,27 @@ input[type=submit]{
 .map{
     width: 2100px;
 }
+.carousel .current {
+    display: block;
+}
+.carousel{
+    object-fit: cover;
+    object-position: 90.60% 50%;
+    width: 100%;
+    display: block;
+}
+button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid var(--main-color);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: var(--main-color);
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+button:hover {
+    color: tan;
+    background-color: var(--main-color);
+    cursor: grabbing;
+}

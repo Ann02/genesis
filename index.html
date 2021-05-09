@@ -8,6 +8,7 @@
     <link rel="icon" href="img/Genesislogo.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/img.css">
 </head>
 <body>
     <header>
@@ -35,33 +36,11 @@
         </nav>
     </header>
      <main>
-         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-             <div class="carousel-inner">
-                 <div class="carousel-item active">
-                     <img src="img/Genesisexit.jpg" class="d-block w-100" alt="...">
-                 </div>
-                 <div class="carousel-item">
-                     <img src="img/Genesisreception.jpg" class="d-block w-100" alt="...">
-                 </div>
-                 <div class="carousel-item">
-                     <img src="img/Genesiscrystalprive.jpg" class="d-block w-100" alt="...">
-                 </div>
-                 <div class="carousel-item">
-                     <img src="img/Genesisin.jpg" class="d-block w-100" alt="...">
-                 </div>
-                 <div class="carousel-item">
-                     <img src="img/Genesiscrystal.jpg" class="d-block w-100" alt="...">
-                 </div>
-             </div>
-         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
-             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Previous</span>
-         </button>
-         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Next</span>
-         </button>
-         </div>
+         <div class="carousel">
+            <img class="current" src="" alt="Carousel Image">
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
          <div id="about-us">
                  <img class="genesis" src="img/Genesisteam.jpg" alt="Genesis team">
                  <div class="in-in">
@@ -90,7 +69,6 @@
          <p>Найдієвішим способом подолати облисіння назавжди є пересадка волосся. Щороку в світі роблять майже мільйон операцій з трансплантації волосся.</p>
           <div class="buttons">
                      <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
           </div>
     </div>
     <div class="carousel-item">
@@ -99,7 +77,6 @@
          <p>Відділ пластичної хірургії у клініці Genesis, насамперед — найсучасніше обладнання, новітні технології, комфортні умови для пацієнтів та кваліфікований персонал.</p>
           <div class="buttons">
                      <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
           </div>
     </div>
     <div class="carousel-item">
@@ -108,7 +85,6 @@
          <p>Відділ хірургії у клініці Genesis вирішить будь-які естетичні недоліки із застосуванням найіноваційніших апаратів та найсучасніших технологій, найвищого рівня сертифікації.</p>
           <div class="buttons">
                      <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
           </div>
     </div>
     <div class="carousel-item">
@@ -117,7 +93,6 @@
          <p>Аналізи<br>Гінекологічні дослідження<br>Гіпоталамо-гіпофізарно-надниркова (гормональна панель)<br>Репродуктивна (гормональна панель)<br>Тиреоїдна (гормональна панель)<br>Операційні обстеження</p>
         <div class="buttons">
                      <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
         </div>
     </div>
     <div class="carousel-item">
@@ -126,7 +101,6 @@
         <p>Альтернативна пластична хірургія / Апаратна косметологія<br>Дерматологія<br>Ін’єкційна косметологія<br>Класична косметологія</p>
         <div class="buttons">
                      <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
         </div>
      </div>
      <div class="carousel-item">
@@ -135,7 +109,6 @@
         <p>Персонально розроблені комплекси GENESIS FIT для апаратної корекції фігури<br>Фізіотерапія (лікувальні та реабілітаційні програми)</p>
         <div class="buttons">
                      <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
         </div>
      </div>
      <div class="carousel-item">
@@ -144,7 +117,6 @@
         <p>Hair service<br>Visage<br>Nail service</p>
         <div class="buttons">
                      <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
         </div>
      </div>
   </div>
@@ -159,78 +131,8 @@
   </button>
 </div>
 </article>
-             <!--<article> 
-                 <img class="genesis" src="img/Genesishair.jpg" alt="Hair transplant">
-                 <h3>Пересадка волосся</h3>
-                 <p>Найдієвішим способом подолати облисіння назавжди є пересадка волосся. Щороку в світі роблять майже мільйон операцій з трансплантації волосся.
-                 </p>
-                 <div class="buttons">
-                     <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
-                 </div>
-             </article>
-             <article>
-                 <img class="genesis" src="img/Genesisplastic.jpg" alt="Plastic surgery">
-                 <h3>Пластична хірургія</h3>
-                 <p>Відділ пластичної хірургії у клініці Genesis, насамперед — найсучасніше обладнання, новітні технології, комфортні умови для пацієнтів та кваліфікований персонал.
-                 </p>
-                 <div class="buttons">
-                     <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
-                 </div>
-             </article>
-             <article>
-                 <img class="genesis" src="img/Genesissurgery.jpg" alt="Surgery">
-                 <h3>Хірургія</h3>
-                 <p>Відділ хірургії у клініці Genesis вирішить будь-які естетичні недоліки із застосуванням найіноваційніших апаратів та найсучасніших технологій, найвищого рівня сертифікації.
-                 </p>
-                 <div class="buttons">
-                     <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
-                 </div>
-             </article>
-             <article>
-                 <img class="genesis" src="img/Genesislaboratory.jpg" alt="Laboratory">
-                 <h3>Лабораторія</h3>
-                 <p>Аналізи<br>Гінекологічні дослідження<br>Гіпоталамо-гіпофізарно-надниркова (гормональна панель)<br>Репродуктивна (гормональна панель)<br>Тиреоїдна (гормональна панель)<br>Операційні обстеження
-                 </p>
-                 <div class="buttons">
-                     <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
-                 </div>
-             </article>
-             <article>
-                 <img class="genesis" src="img/Genesisface.jpg" alt="Face">
-                 <h3>Обличчя</h3>
-                 <p>Альтернативна пластична хірургія / Апаратна косметологія<br>Дерматологія<br>Ін’єкційна косметологія<br>Класична косметологія
-                 </p>
-                 <div class="buttons">
-                     <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
-                 </div>
-             </article>
-             <article>
-                 <img class="genesis" src="img/Genesisbody.jpg" alt="Body">
-                 <h3>Тіло</h3>
-                 <p>Персонально розроблені комплекси GENESIS FIT для апаратної корекції фігури<br>Фізіотерапія (лікувальні та реабілітаційні програми)
-                 </p>
-                 <div class="buttons">
-                     <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
-                 </div>
-             </article>
-             <article>
-                 <img class="genesis" src="img/Genesisimage.jpg" alt="Image">
-                 <h3>Імідж</h3>
-                 <p>Hair service<br>Visage<br>Nail service
-                 </p>
-                 <div class="buttons">
-                     <form action="#leading-in"><button class="button">Замовити консультацію</button></form>
-                     <form action="#leading-in"><button class="button">Записатись на візит</button></form>
-                 </div>
-             </article>-->
-             </div>
-             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
          
     </main>   
     <footer>
