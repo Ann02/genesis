@@ -72,7 +72,6 @@ formBtn.addEventListener("click", (e) => {
 });
 
 formBtn.addEventListener("click", (e) => {
-    e.preventDefault();
     const formData = new FormData(form);
 
     localStorage.setItem('name', formData.get('name'));
