@@ -60,18 +60,7 @@ if (localStorage.getItem('name') !== null) {
     form.querySelector('#email').value = localStorage.getItem('email');
 }
 
-formBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    console.log(validateEmail(form.querySelector('#email').value));
-    const formData = new FormData(form);
-
-    localStorage.setItem('name', formData.get('name'));
-    localStorage.setItem('number', formData.get('number'));
-    localStorage.setItem('email', formData.get('email'));
-});
-
-formBtn.addEventListener("click", (e) => {
+formBtn.addEventListener("click", () => {
     const formData = new FormData(form);
 
     localStorage.setItem('name', formData.get('name'));
