@@ -10,8 +10,15 @@ function updateClock() {
 }
 
 function validateEmail(email) {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]{3,}\.)+[a-zA-Z]{3,3}))$/;
-    return re.test(String(email).toLowerCase());
+    if (email.endsWith('@gmail.com') || email.endsWith('@ukr.net')) {
+        email = email.replace('@gmail.com', '');
+        email = email.replace('@ukr.net', '');
+
+        const re = /^([a-zA-Z\-0-9]{3,})$/i;
+        if (re.test(String(email).toLowerCase())) {
+            return true;
+        }
+    }
 }
 
 function checkValidate() {
