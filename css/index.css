@@ -145,6 +145,7 @@ p{
     color: var(--accent-color);
     font-size: 1rem;
 }
+
 #about-us .genesis{
     object-fit: cover;
     object-position: 90.60% 50%;
@@ -205,7 +206,8 @@ table{
     padding-top: 15%;
     padding-bottom: 10%;
 }
-input[type=text]{
+input[type=text],
+input[type=email]{
     padding: 0.35em 1.2em;
     border: 0.1em solid var(--main-color);
     margin: 0 0.3em 0.3em 0;
@@ -215,7 +217,8 @@ input[type=text]{
     transition: color 0.7s;
     background-color: transparent;
 }
-input[type=text]:hover{
+input[type=text]:hover,
+input[type=email]:hover{
     color: tan;
     background-color: var(--main-color);
     cursor: grabbing;
@@ -229,7 +232,11 @@ input[type=submit]{
     text-align: center;
     transition: color 0.7s;
     background-color: var(--main-color);
-    cursor: grabbing
+    cursor: grabbing;
+    opacity: 1;
+}
+input[type=submit]:disabled {
+    opacity: .3;
 }
 .info{
     display: flex;
@@ -247,7 +254,8 @@ input[type=submit]{
     width: 2100px;
 }
 .carousel .current {
-    display: block;
+    width: 100%;
+    margin-bottom: 5px;
 }
 .carousel{
     object-fit: cover;
